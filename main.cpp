@@ -1,7 +1,10 @@
 #include <iostream>
+#include <QApplication>
 
 
 int main(int argc, char *argv[]){
-    std::cout << "hello world !" << std::endl;
-    return 0;
+    QApplication app(argc,argv);
+
+
+    return app.exec();
 }
