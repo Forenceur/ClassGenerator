@@ -8,8 +8,14 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 SOURCES += \
     main.cpp \
     mainwin.cpp \
-    codewin.cpp
+    codewin.cpp \
+    qgroupboxdefclass.cpp \
+    qgroupboxoptions.cpp \
+    qgroupboxcommentary.cpp
 
 HEADERS += \
     mainwin.h \
-    codewin.h
+    codewin.h \
+    qgroupboxdefclass.h \
+    qgroupboxoptions.h \
+    qgroupboxcommentary.h

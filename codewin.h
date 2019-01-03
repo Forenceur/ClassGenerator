@@ -2,12 +2,22 @@
 #define CODEWIN_H
 
 #include <QWidget>
+#include <QApplication>
+#include <QPushButton>
+#include <QVBoxLayout>
+#include <QTextEdit>
+#include <QMessageBox>
 
-class CodeWin : public QWidget
+class CodeWin : public QDialog
 {
     Q_OBJECT
 public:
-    explicit CodeWin(QWidget *parent = nullptr);
+    explicit CodeWin(QString const& text, QWidget *parent = nullptr);
+
+private:
+    QVBoxLayout *vbox;
+    QTextEdit *code;
+    QPushButton *buttonQuit;
 
 signals:
 
