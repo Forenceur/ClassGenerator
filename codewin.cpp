@@ -3,7 +3,7 @@
 CodeWin::CodeWin(QString const& text, QWidget *parent) : QDialog(parent)
 {
     vbox=new QVBoxLayout;
-    buttonQuit=new QPushButton("Quitter");
+    buttonQuit=new QPushButton(tr("Quitter","pour quitter l'app"));
     code=new  QTextEdit;
     code->setReadOnly(true);
     code->setFont(QFont("Courrier"));

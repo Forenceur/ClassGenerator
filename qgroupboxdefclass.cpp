@@ -1,13 +1,13 @@
 #include "qgroupboxdefclass.h"
 
-QGroupBoxDefClass::QGroupBoxDefClass(QWidget *parent) : QGroupBox("Définition de la classe",parent)
+QGroupBoxDefClass::QGroupBoxDefClass(QWidget *parent) : QGroupBox(tr("Définition de la classe"),parent)
 {
     form=new QFormLayout;
     ClassBaseField=new QLineEdit();
     ClassNameField=new QLineEdit();
 
-    form->addRow("&Nom:",ClassNameField);
-    form->addRow("Classe &Mère:",ClassBaseField);
+    form->addRow(tr("&Nom:","Nom de la classe"),ClassNameField);
+    form->addRow(tr("Classe &Mère:"),ClassBaseField);
 
     this->setLayout(form);
 }

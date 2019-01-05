@@ -6,8 +6,8 @@ MainWin::MainWin(QWidget *parent) : QWidget(parent)
     boxDefClass=new QGroupBoxDefClass;
     boxOptions=new  QGroupBoxOptions;
     boxComment=new QGroupBoxCommentary;
-    buttonExit=new QPushButton("Quitter");
-    buttonGenerate=new QPushButton("Générer");
+    buttonExit=new QPushButton(tr("Quitter"));
+    buttonGenerate=new QPushButton(tr("Générer","génére le code voulu"));
     layoutButton=new QHBoxLayout;
 
     layoutButton->addWidget(buttonGenerate);
@@ -32,12 +32,12 @@ void MainWin::generateCode(void)
         code.append("/*\n");
         QString author=boxComment->getAuthorString();
         if(!author.isEmpty())
-            code.append(" *autheur : ");
+            code.append(tr(" *autheur : "));
         code.append(author);
 
         QString date=boxComment->getDateString();
         if(!date.isEmpty())
-            code.append("\n *date création : ");
+            code.append(tr("\n *date création : "));
         code.append(date);
 
         QString description=boxComment->getCommentTextString();

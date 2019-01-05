@@ -19,3 +19,7 @@ HEADERS += \
     qgroupboxdefclass.h \
     qgroupboxoptions.h \
     qgroupboxcommentary.h
+
+TRANSLATIONS += \
+    classgenerator_en.ts \
+    classgenerator_es.ts

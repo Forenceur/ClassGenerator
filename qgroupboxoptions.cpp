@@ -2,9 +2,9 @@
 
 QGroupBoxOptions::QGroupBoxOptions(QWidget *parent) : QGroupBox("Options",parent)
 {
-    protectionInclude=new QCheckBox("Protéger le &header contre les inclusions multiples");
-    generateConstructor=new QCheckBox("Générer un &constructeur par défaut");
-    generateDestructor=new QCheckBox("Générer un &destructeur");
+    protectionInclude=new QCheckBox(tr("Protéger le &header contre les inclusions multiples"));
+    generateConstructor=new QCheckBox(tr("Générer un &constructeur par défaut"));
+    generateDestructor=new QCheckBox(tr("Générer un &destructeur"));
 
     protectionInclude->setChecked(true);
 
